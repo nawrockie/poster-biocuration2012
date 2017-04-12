@@ -1,0 +1,86 @@
+\begin{table}
+\caption{Summary of RNA annotations in published genomes.  Counts were
+  taken from ``NCBI Genome'' RefSeq annotation for the listed genomes
+  (\texttt{www.ncbi.nlm.nih.gov/sites/genome}). Archaeal and
+  bacterial genomes were selected as the first five published in 2010
+  according to NCBI
+  (\texttt{www.ncbi.nlm.nih.gov/genomes/lproks.cgi}) for which
+  a Refseq entry and a referenced publication was available, as of
+  March 30, 2011. Eukaryotes were selected from to be representative,
+  from ``complete'' genomes according to NCBI
+  (\texttt{www.ncbi.nlm.nih.gov/genomes/leuks.cgi}) as of April
+  29, 2011.  One genome from each ``group'' (fungi, protists, plant,
+  animal) was chosen.  ``rRNA'' includes 5S, SSU, LSU, and 5.8S for
+  eukaryotes only. Abbreviations: TIGR: The Institute for Genomic
+  Research, RAS: Russian Academy of Sciences, JGI: Joint Genome
+  Institute, NML: National Microbiology Laboratory.
+%  GenBank/Refseq accessions for genomes:
+%  \emph{M. ruminantium}: CP001719.1/NC\_013790.1, 
+%  \emph{H. volcanii}:    CP001956.1/NC\_013967.1, 
+%  \emph{H. jeotgali}:   CP002062.1/NC\_014297.1, 
+%  \emph{A. saccharovorans}: CP001742.1/NC\_014374.1, 
+%  \emph{M. marburgensis}:   CP001710.1/NC\_014408.1, 
+%  \emph{C. rodentium}:      FN543502.1/NC\_013716.1, 
+%  \emph{B. dentium}:        CP001750.1/NC\_013714.1,
+%  \emph{P. staleyi}:        CP001848.1/NC\_013720.1, 
+%  \emph{L. monocytogenes}:  CP002062.1/NC\_014374.1,
+%  \emph{C. UCYN-A}:         CP001602.1/NC\_013766.1.}
+  GenBank accessions for archaeal and bacterial genomes:
+  \emph{M. rum.}:    CP001719.1,
+  \emph{H. vol.}:       CP001956.1,
+  \emph{H. jeo.}:       CP002062.1,
+  \emph{A. sac.}: CP001742.1,
+  \emph{M. mar.}:   CP001710.1,
+  \emph{C. rod.}:      FN543502.1,
+  \emph{B. den.}:        CP001750.1,
+  \emph{P. sta.}:        CP001848.1,
+  \emph{L. mon.}:  CP002062.1,
+  \emph{C. ucy.}:         CP001602.1.
+  NCBI Genome project RefSeq ID for eukaryotic genomes:
+  \emph{C. dub.}:   38659,
+  \emph{L. bra.}:   19185,
+  \emph{A. tha.}:       116,
+  \emph{M. mus.}:       169.}
+\label{tbl:genomes}       
+\begin{tabular}{|ll|lr|lr|lr|}
+\hline\noalign{\smallskip}
+                                         & sequencing center,&\multicolumn{2}{c|}{tRNAs}&\multicolumn{2}{c|}{rRNAs}& \multicolumn{2}{c|}{other RNAs} \\ \cline{3-8}
+organism [reference]                     & country           & method        & \#       & method         & \# & method & \# \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+\multicolumn{8}{l}{\textbf{archaea}} \\ \hline
+\emph{Methanobrevibacter}                & AgResearch,       & tRNAscan-SE   & 58       & BLASTN         & 8  &                & 0$^a$    \\
+\emph{ruminantium} \cite{Leahy10}        & New Zealand       &               &          &                &    &                &          \\ \hline
+\emph{Haloferax}                         & TIGR,             & tRNAscan-SE   & 52       & BLASTN         & 6  &                & 0$^a$    \\
+\emph{volcanii} \cite{Hartman10}         & USA               &               &          &                &    &                &          \\  \hline %Infernal; UCSC has Rfam track;
+\emph{Halalkalicoccus}                   & Kyung Hee Univ.,  & tRNAscan-SE   & 49       & RNAmmer        & 3  &                & 0        \\
+\emph{jeotgali} \cite{Roh10}             & Korea             &               &          &                &    &                &          \\ \hline
+\emph{Acidilobus}                        & RAS,              & tRNAscan-SE   & 45       & RNAmmer        & 3  &                & 0        \\
+\emph{saccharovorans} \cite{Mardonov10}  & Russia            &               &          &                &    &                &          \\ \hline
+\emph{Methanothermobacter}               & G. August Univ.   & tRNAscan-SE   & 40       & RNAmmer        & 2  & \emph{unknown} &  2       \\
+\emph{marburgensis} \cite{Liesegang10}   & Germany           &               &          &                &    &                &          \\ \hline %SRP, RNaseP 
+\multicolumn{8}{l}{\textbf{bacteria}} \\ \hline
+\emph{Citrobacter}                       & Sanger Institute, & tRNAscan-SE   & 86       & \emph{unknown} & 22 & Infernal       & 56       \\
+\emph{rodentium} \cite{Petty10}          & UK                &               &          &                &    & \& Rfam        &          \\ \hline
+\emph{Bifidobacterium}                   & Univ. of Parma,   & tRNAscan-SE   & 55       & BLASTN         & 13 &                &  0       \\
+\emph{dentium} \cite{Ventura09}          & Italy             &               &          &                &    &                &          \\ \hline
+\emph{Pirellula}                         & JGI,              &\emph{unknown} & 46       & \emph{unknown} &  3 & \emph{unknown} & 3        \\
+\emph{staleyi} \cite{Clum09}             & USA               &               &          &                &    &                &          \\ \hline %tmRNA, SRP, RNaseP
+\emph{Listeria}                          & NML,              & tRNAscan-SE   & 58       & RNAmmer        & 15 &                & 0        \\
+\emph{monocytogenes} \cite{Gilmour10}    & Canada            &               &          &                &    &                &          \\ \hline
+\emph{Cyanobacterium}                    & UC Santa Cruz,    & tRNAscan-SE   & 36       & search\_for-   & 6  &                & 0        \\
+\emph{UCYN-A} \cite{Tripp10}             & USA               &               &          & \_rnas         &    &                &          \\ \hline
+\multicolumn{8}{l}{\textbf{eukaryotes}} \\ \hline
+\emph{Candida}                           & Sanger Institute  &\emph{unknown} &     101  &                & 0  & \emph{unknown} & 11       \\
+\emph{dubliniensis} \cite{Jackson09}     & UK                &               &          &                &    &                &          \\ \hline
+\emph{Leishmania}                        & Sanger Institute  &               &       0  &                &  0 & \emph{unknown} & 6        \\
+\emph{braziliensis} \cite{Peacock07}     & UK                &               &          &                &    &                &          \\ \hline
+\emph{Arabidopsis}                       & multiple          & tRNAscan-SE,  & 688      & BLASTN         & 14 & \emph{unknown} & 689      \\
+\emph{thaliana} \cite{Theologis00}$^b$   & centers           & tRNAscan      &          &                &    &                &          \\ \hline
+\emph{Mus}                               & multiple          & tRNAscan-SE   & 509$^a$  & \emph{unknown} & 5  & \emph{unknown} & 4059$^a$ \\
+\emph{musculus} \cite{Waterston02}       & centers           &               &          &                &    &                &          \\ %\hline
+\noalign{\smallskip}\hline\noalign{\smallskip}
+\end{tabular}
+
+$^a$ Numbers from NCBI (shown here) are inconsistent with explicitly mentioned counts given in the referenced publication for this genome.
+
+\end{table}

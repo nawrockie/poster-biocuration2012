@@ -1,0 +1,128 @@
+\begin{footnotesize}
+\begin{table}
+\label{tbl:genomes}       
+\begin{center}
+\begin{tabular}{|ll|lr|lr|lr|c|rr|}
+\hline
+                                         & sequencing center,&\multicolumn{2}{c|}{tRNAs}&\multicolumn{2}{c|}{rRNAs}& \multicolumn{2}{c|}{other RNAs} & & \multicolumn{2}{|c|}{Infernal+Rfam} \\ \cline{3-8}
+organism [reference]                     & country           & method        & \#       & method         & \# & method & \# & & \# RNAs & time(h) \\ \cline{1-8} \cline{9-11}
+\multicolumn{11}{l}{} \\
+\multicolumn{11}{l}{\textbf{archaea}} \\ \cline{1-8} \cline{9-11}
+\emph{Methanobrevibacter}                & AgResearch,       & tRNAscan-SE   & 58       & BLASTN         & 8  &                & 0        & & 175 & 0.15 \\
+\emph{ruminantium}                       & New Zealand       &               &          &                &    &                &          & & & \\ \cline{1-8} \cline{9-11}
+%\emph{Haloferax}                         & TIGR,             & tRNAscan-SE   & 52       & BLASTN         & 6  &                & 0        \\
+%\emph{volcanii}                          & USA               &               &          &                &    &                &          \\  \cline{1-8} \cline{9-11} %Infernal; UCSC has Rfam track;
+\emph{Halalkalicoccus}                   & Kyung Hee Univ.,  & tRNAscan-SE   & 49       & RNAmmer        & 3  &                & 0        & & 54 & \\
+\emph{jeotgali}                          & Korea             &               &          &                &    &                &          & & & \\ \cline{1-8} \cline{9-11}
+\emph{Acidilobus}                        & RAS,              & tRNAscan-SE   & 45       & RNAmmer        & 3  &                & 0        & & 63 & \\
+\emph{saccharovorans}                    & Russia            &               &          &                &    &                &          & & & \\ \cline{1-8} \cline{9-11}
+%\emph{Methanothermobacter}               & G. August Univ.   & tRNAscan-SE   & 40       & RNAmmer        & 2  & \emph{unknown} &  2       \\
+%\emph{marburgensis}                      & Germany           &               &          &                &    &                &          \\ \cline{1-8} \cline{9-11} %SRP, RNaseP 
+\multicolumn{11}{l}{} \\
+\multicolumn{11}{l}{\textbf{bacteria}} \\ \cline{1-8} \cline{9-11}
+\emph{Citrobacter}                       & Sanger Institute, & tRNAscan-SE   & 86       & \emph{unknown} & 22 & Infernal       & 56       & & 357 & \\
+\emph{rodentium}                         & UK                &               &          &                &    & \& Rfam        &          & & & \\ \cline{1-8} \cline{9-11}
+\emph{Bifidobacterium}                   & Univ. of Parma,   & tRNAscan-SE   & 55       & BLASTN         & 13 &                &  0       & 106 & \\
+\emph{dentium}                           & Italy             &               &          &                &    &                &          & & \\ \cline{1-8} \cline{9-11}
+%\emph{Pirellula}                         & JGI,              &\emph{unknown} & 46       & \emph{unknown} &  3 & \emph{unknown} & 3        \\
+%\emph{staleyi}                           & USA               &               &          &                &    &                &          \\ \cline{1-8} \cline{9-11} %tmRNA, SRP, RNaseP
+\emph{Listeria}                          & NML,              & tRNAscan-SE   & 58       & RNAmmer        & 15 &                & 0        & & 296 & \\
+\emph{monocytogenes}                     & Canada            &               &          &                &    &                &          & & & \\ \cline{1-8} \cline{9-11}
+%\emph{Cyanobacterium}                    & UC Santa Cruz,    & tRNAscan-SE   & 36       & search\_for-   & 6  &                & 0        \\
+%\emph{UCYN-A}                            & USA               &               &          & \_rnas         &    &                &          \\ \cline{1-8} \cline{9-11}
+\multicolumn{11}{l}{} \\
+\multicolumn{11}{l}{\textbf{eukaryotes}} \\ \cline{1-8} \cline{9-11}
+\emph{Candida}                           & Sanger Institute  &\emph{unknown} &     101  &                & 0  & \emph{unknown} & 11       & & 203 & \\
+\emph{dubliniensis}                      & UK                &               &          &                &    &                &          & & & \\ \cline{1-8} \cline{9-11}
+%\emph{Leishmania}                        & Sanger Institute  &               &       0  &                &  0 & \emph{unknown} & 6        \\
+%\emph{braziliensis}                      & UK                &               &          &                &    &                &          \\ \cline{1-8} \cline{9-11}
+\emph{Arabidopsis}                       & multiple          & tRNAscan-SE,  & 688      & BLASTN         & 14 & \emph{unknown} & 689      & & 2450 & \\
+\emph{thaliana}                          & centers           & tRNAscan      &          &                &    &                &          & & & \\ \cline{1-8} \cline{9-11}
+\emph{Mus}                               & multiple          & tRNAscan-SE   & 509  & \emph{unknown} & 5  & \emph{unknown} & 4059 & & & \\
+\emph{musculus}                          & centers           &               &          &                &    &                &          & & & \\ %\cline{1-8} \cline{9-11}
+\cline{1-8} \cline{9-11}
+\multicolumn{11}{l}{} \\
+\end{tabular}
+
+\caption{Summary of RNA annotations in published genomes.  Counts were
+  taken from ``NCBI Genome'' RefSeq annotation for the listed genomes
+  (\texttt{www.ncbi.nlm.nih.gov/sites/genome}). 
+  %Archaeal and
+  %bacterial genomes were selected as the first five published in 2010
+  %according to NCBI
+  %(\texttt{www.ncbi.nlm.nih.gov/genomes/lproks.cgi}) for which
+  %a Refseq entry and a referenced publication was available, as of
+  %March 30, 2011. Eukaryotes were selected from to be representative,
+  %from ``complete'' genomes according to NCBI
+  %(\texttt{www.ncbi.nlm.nih.gov/genomes/leuks.cgi}) as of April
+  %29, 2011.  One genome from each ``group'' (fungi, protists, plant,
+  %animal) was chosen.  
+  ``rRNA'' includes 5S, SSU, LSU, and 5.8S for
+  eukaryotes only. Abbreviations: RAS: Russian Academy of Sciences, NML: National Microbiology Laboratory.
+  GenBank accessions for archaeal and bacterial genomes:
+  \emph{M. rum.}: CP001719.1,
+%  \emph{H. vol.}: CP001956.1,
+  \emph{H. jeo.}: CP002062.1,
+  \emph{A. sac.}: CP001742.1,
+%  \emph{M. mar.}: CP001710.1,
+  \emph{C. rod.}: FN543502.1,
+  \emph{B. den.}: CP001750.1,
+%  \emph{P. sta.}: CP001848.1,
+  \emph{L. mon.}: CP002062.1,
+%  \emph{C. ucy.}: CP001602.1.
+  NCBI Genome project RefSeq ID for eukaryotic genomes:
+  \emph{C. dub.}: 38659,
+%  \emph{L. bra.}: 19185,
+  \emph{A. tha.}:   116,
+  \emph{M. mus.}:   169.}
+\end{center}
+\end{table}
+\end{footnotesize}
+
+
+
+% ORIGINAL CAPTION
+\begin{comment}
+\caption{Summary of RNA annotations in published genomes.  Counts were
+  taken from ``NCBI Genome'' RefSeq annotation for the listed genomes
+  (\texttt{www.ncbi.nlm.nih.gov/sites/genome}). Archaeal and
+  bacterial genomes were selected as the first five published in 2010
+  according to NCBI
+  (\texttt{www.ncbi.nlm.nih.gov/genomes/lproks.cgi}) for which
+  a Refseq entry and a referenced publication was available, as of
+  March 30, 2011. Eukaryotes were selected from to be representative,
+  from ``complete'' genomes according to NCBI
+  (\texttt{www.ncbi.nlm.nih.gov/genomes/leuks.cgi}) as of April
+  29, 2011.  One genome from each ``group'' (fungi, protists, plant,
+  animal) was chosen.  ``rRNA'' includes 5S, SSU, LSU, and 5.8S for
+  eukaryotes only. Abbreviations: TIGR: The Institute for Genomic
+  Research, RAS: Russian Academy of Sciences, JGI: Joint Genome
+  Institute, NML: National Microbiology Laboratory.
+%  GenBank/Refseq accessions for genomes:
+%  \emph{M. ruminantium}: CP001719.1/NC\_013790.1, 
+%  \emph{H. volcanii}:    CP001956.1/NC\_013967.1, 
+%  \emph{H. jeotgali}:   CP002062.1/NC\_014297.1, 
+%  \emph{A. saccharovorans}: CP001742.1/NC\_014374.1, 
+%  \emph{M. marburgensis}:   CP001710.1/NC\_014408.1, 
+%  \emph{C. rodentium}:      FN543502.1/NC\_013716.1, 
+%  \emph{B. dentium}:        CP001750.1/NC\_013714.1,
+%  \emph{P. staleyi}:        CP001848.1/NC\_013720.1, 
+%  \emph{L. monocytogenes}:  CP002062.1/NC\_014374.1,
+%  \emph{C. UCYN-A}:         CP001602.1/NC\_013766.1.}
+  GenBank accessions for archaeal and bacterial genomes:
+  \emph{M. rum.}:    CP001719.1,
+%  \emph{H. vol.}:       CP001956.1,
+  \emph{H. jeo.}:       CP002062.1,
+  \emph{A. sac.}: CP001742.1,
+%  \emph{M. mar.}:   CP001710.1,
+  \emph{C. rod.}:      FN543502.1,
+  \emph{B. den.}:        CP001750.1,
+%  \emph{P. sta.}:        CP001848.1,
+  \emph{L. mon.}:  CP002062.1,
+%  \emph{C. ucy.}:         CP001602.1.
+  NCBI Genome project RefSeq ID for eukaryotic genomes:
+  \emph{C. dub.}:   38659,
+%  \emph{L. bra.}:   19185,
+  \emph{A. tha.}: 116, \emph{M. mus.}: 169.}  A table similar to this
+one will appear in a chapter of an upcoming book from Humana Press.
+\end{comment}

@@ -1,0 +1,45 @@
+\begin{footnotesize}
+\begin{table}
+\begin{tabular}{ll|ll|lr|lr|lr}
+                                         & sequencing center,& \multicolumn{2}{c|}{tRNAs} & \multicolumn{2}{c|}{rRNAs} & \multicolumn{2}{c|}{other RNAs} &  \\ \cline{3-8}
+  organism [reference]                   & country           & method      & \# & method & \# & method & \# \\ \hline
+\emph{Methanobrevibacter}                & AgResearch,       & tRNAscan-SE & 58 & BLASTN & 8  &      & 0$^a$& \\
+\emph{ruminantium} \citep{Leahy10}        & New Zealand       &             &    &        &    &      & \\ 
+& & & & & & & & \\
+\emph{Haloferax}                         & TIGR,             & tRNAscan-SE & 52 & BLASTN & 6  &      & 0$^b$& \\
+\emph{volcanii} \citep{Hartman10}         & USA               &             &    &        &    &      & \\  %Infernal; UCSC has Rfam track;
+& & & & & & & & \\
+\emph{Halalkalicoccus}                   & Kyung Hee Univ.,  & tRNAscan-SE & 49 & RNAmmer& 3  &      & 0 \\
+\emph{jeotgali} \citep{Roh10}             & Korea             &             &    &        &    &      & \\ 
+& & & & & & & & \\
+\emph{Acidilobus}                        & RAS,              & tRNAscan-SE & 45 & RNAmmer& 3  &      & 0 \\
+\emph{saccharovorans} \citep{Mardonov10}  & Russia            &             &    &        &    &      &  \\ 
+& & & & & & & & \\
+\emph{Methanothermobacter}               & G. August Univ.   & tRNAscan-SE & 40 & RNAmmer& 2  & \emph{unknown} &  2 \\
+\emph{marburgensis} \citep{Liesegang10}   & Germany           &             &    &        &    &      & \\  %SRP, RNaseP 
+& & & & & & & & \\
+& & & & & & & & \\
+\emph{Citrobacter}                       & Sanger Institute, & tRNAscan-SE & 86 & \emph{unknown} & 22 & Infernal & 56 \\
+\emph{rodentium} \citep{Petty10}          & UK                &             &    &                &    & \& Rfam  &    \\ 
+& & & & & & & & \\
+\emph{Bifidobacterium}                   & Univ. of Parma,   & tRNAscan-SE & 55 & BLASTN & 13 &       &        0 \\
+\emph{dentium} \citep{Ventura09}          & Italy             &             &    &        &    &       &        \\ 
+& & & & & & & & \\
+\emph{Pirellula}                         & Joint Genome Inst.,&\emph{unknown}&46&\emph{unknown}&  3   & \emph{unknown} & 3 \\
+\emph{staleyi} \citep{Clum09}             & USA               &             &    &        &            &          &     & \\  %tmRNA, SRP, RNaseP
+& & & & & & & & \\
+\emph{Listeria}                          & NML,              & tRNAscan-SE & 58 &RNAmmer & 15 &       &          0 \\
+\emph{monocytogenes} \citep{Gilmour10}    & Canada            &             &    &    &        &       &             \\ 
+& & & & & & & & \\
+\emph{Cyanobacterium}                    & UC Santa Cruz,    & tRNAscan-SE$^c$ & 36 & search\_for\_rnas$^d$ & 6  &     & 0    \\
+\emph{UCYN-A} \citep{Tripp10}             & USA               &             &    &             &       &          &     & \\ 
+& & & & & & & & \\ \hline
+\end{tabular}
+
+$^a$ Table 1 from \citep{Leahy10} reports 3 ``other'' RNAs, but these are not contained in the RefSeq or GenBank annotation.
+$^b$ \citep{Hartman10} reports that other RNAs were annotated, but these are not contained in the RefSeq or GenBank annotation.
+$^c$ tRNAscan-SE and search\_for\_rnas (available from the developer
+Niels Larsen) are part of the RAST pipeline \citep{Aziz08}, which was used to annotate this genome.
+\end{table}
+\end{footnotesize}
+

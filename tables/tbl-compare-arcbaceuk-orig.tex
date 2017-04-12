@@ -1,0 +1,136 @@
+%
+\begin{table}
+\caption{Comparison of predictions by Infernal and family-specific
+  methods for various RNAs in five archaeal genomes. Abbreviated
+  genome names are fully listed in Table~\ref{tbl:genomes}.  Genome
+  sizes in millions of bases (Mb) are shown in parantheses underneath
+  genome names. Columns labeled ``hits'' include total number of
+  predictions, and those labeled ``unq'' include unique hits that are
+  not found with the method on the adjacent line. Average timings are
+  reported in minutes (``(min)''). LSU rRNA Infernal
+  searches were not performed because Rfam has no LSU model.  Infernal
+  searches for SSU rRNA were done with a truncated model of about 500
+  positions, while RNAmmer searches used a full length model (about
+  1500 positions). All programs were run in default mode, except when
+  options were necessary to restrict searches to the specific family
+  and/or domain being tested. SRPscan was run in fast mode with
+  non-Alu models. Infernal's cmsearch was run with the {\tt --ga}
+  option which sets the reporting bit score threshold as the
+  family-specific Rfam GA cutoff discussed in the text. Program
+  versions used: Infernal v1.0.2; tRNAscan-SE v1.23; Aragorn v1.2;
+  Bcheck v0.6; web version of SRPscan available at {\tt
+    http://bio.lundberg.gu.se/srpscan/}; RNAmmer v1.2. Because no
+  downloadable version of SRPscan was available, times were measured
+  manually via stopwatch on their website and include time required
+  for sequence data upload. All other times were measured as single
+  execution threads on 2.66 GHz Intel Xeon Gainestown (X5550)
+  processors.
+ }
+\begin{center}
+\begin{tabular}{|l|l|rr|rr|rr|rr|rr|r|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{} &  \multicolumn{10}{c}{organism (archaea)}   & \multicolumn{1}{c}{} \\ \cline{3-12}
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &  \multicolumn{2}{c|}{\emph{M. rum.}}  &  \multicolumn{2}{c|}{\emph{H. vol.}}  &  \multicolumn{2}{c|}{\emph{H. jeo.}}  &  \multicolumn{2}{c|}{\emph{A. sac.}}  &  \multicolumn{2}{c|}{\emph{M. mar.}}   & \multicolumn{1}{c}{avg} \\ 
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &  \multicolumn{2}{c|}{(2.9 Mb)}  &  \multicolumn{2}{c|}{(4.0 Mb)}  &  \multicolumn{2}{c|}{(3.7 Mb)}  &  \multicolumn{2}{c|}{(1.5 Mb)}  &  \multicolumn{2}{c|}{(1.6 Mb)} & \multicolumn{1}{c}{time}  \\ 
+\multicolumn{1}{c}{family}  &  \multicolumn{1}{c|}{software}  &  hits & unq &  hits & unq &  hits & unq &  hits & unq &  hits & unq  & \multicolumn{1}{c}{(min)} \\ \hline 
+tRNA             &  Infernal         &   60 &   2 &   51 &   2 &   48 &   0 &   45 &   1 &   39 &   0 &    17.3  \\ 
+                 &  tRNAscan-SE      &   58 &   0 &   51 &   2 &   49 &   1 &   45 &   1 &   40 &   1 &     0.5  \\ \hline 
+tRNA             &  Infernal         &   60 &   4 &   51 &   2 &   48 &   4 &   45 &   6 &   39 &   2 &    17.3  \\ 
+                 &  Aragorn          &   56 &   0 &   54 &   5 &   48 &   4 &   39 &   0 &   38 &   1 &  $<$0.1  \\ \hline 
+RNase P RNA      &  Infernal         &    1 &   1 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &     3.4  \\ 
+                 &  Bcheck           &    0 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &     0.2  \\ \hline 
+SRP RNA          &  Infernal         &    1 &   1 &    1 &   0 &    0 &   0 &    0 &   0 &    1 &   0 &     2.2  \\ 
+                 &  SRPscan          &    0 &   0 &    1 &   0 &    1 &   1 &    1 &   1 &    1 &   0 &  $<$0.1  \\ \hline 
+5S rRNA          &  Infernal         &    3 &   3 &    2 &   0 &    1 &   0 &    2 &   2 &    3 &   3 &     4.0  \\ 
+                 &  RNAmmer          &    0 &   0 &    2 &   0 &    1 &   0 &    0 &   0 &    0 &   0 &     0.3  \\ \hline 
+SSU rRNA         &  Infernal         &    2 &   0 &    2 &   0 &    1 &   0 &    1 &   0 &    2 &   0 &     6.7  \\ 
+                 &  RNAmmer          &    2 &   0 &    2 &   0 &    1 &   0 &    1 &   0 &    2 &   0 &     0.3  \\ \hline 
+LSU rRNA         &  Infernal         &      &     &      &     &      &     &      &     &      &     &          \\ 
+                 &  RNAmmer          &    2 &   2 &    2 &   2 &    1 &   1 &    1 &   1 &    2 &   2 &     0.3  \\ \hline 
+\end{tabular}
+\end{center}
+
+\label{tbl:compare-arc}
+\end{table}
+
+
+
+\begin{table}
+\caption{Comparison of predictions by Infernal and family-specific
+  methods for various RNAs in five bacterial genomes. Abbreviated
+  genome names are fully listed in Table~\ref{tbl:genomes}.  
+  Column headings and program versions, options and cutoffs are the
+  same as described in caption of Table~\ref{tbl:compare-arc}, except
+  that for SRPscan, ``rare TRRC tetraloop'' was used for \emph{P. staleyi}
+  and ``common GRRA tetraloop'' was used for all others.  
+}
+\begin{center}
+\begin{tabular}{|l|l|rr|rr|rr|rr|rr|r|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{} &  \multicolumn{10}{c}{organism (bacteria)}   & \multicolumn{1}{c}{} \\ \cline{3-12}
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &  \multicolumn{2}{c|}{\emph{C. rod.}}  &  \multicolumn{2}{c|}{\emph{B. den.}}  &  \multicolumn{2}{c|}{\emph{P. sta.}}  &  \multicolumn{2}{c|}{\emph{L. mon.}}  &  \multicolumn{2}{c|}{\emph{C. ucy.}}   & \multicolumn{1}{c}{avg} \\ 
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &  \multicolumn{2}{c|}{(5.4 Mb)}  &  \multicolumn{2}{c|}{(2.6 Mb)}  &  \multicolumn{2}{c|}{(6.2 Mb)}  &  \multicolumn{2}{c|}{(3.1 Mb)}  &  \multicolumn{2}{c|}{(1.4 Mb)} & \multicolumn{1}{c}{time}  \\ 
+\multicolumn{1}{c}{family}  &  \multicolumn{1}{c|}{software}  &  hits & unq &  hits & unq &  hits & unq &  hits & unq &  hits & unq  & \multicolumn{1}{c}{(min)} \\ \hline 
+tRNA             &  Infernal         &   85 &   1 &   57 &   1 &   48 &   2 &   58 &   0 &   37 &   0 &    23.5  \\ 
+                 &  tRNAscan-SE      &   84 &   0 &   56 &   0 &   46 &   0 &   58 &   0 &   37 &   0 &     0.6  \\ \hline 
+tRNA             &  Infernal         &   85 &   1 &   57 &   1 &   48 &   1 &   58 &   0 &   37 &   0 &    23.5  \\ 
+                 &  Aragorn          &   87 &   3 &   56 &   0 &   49 &   2 &   59 &   1 &   37 &   0 &  $<$0.1  \\ \hline 
+tmRNA            &  Infernal         &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &     7.4  \\ 
+                 &  Aragorn          &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &  $<$0.1  \\ \hline 
+RNase P RNA      &  Infernal         &    1 &   0 &    1 &   0 &    1 &   0 &    2 &   0 &    1 &   0 &     4.1  \\ 
+                 &  Bcheck           &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &     0.2  \\ \hline 
+SRP RNA          &  Infernal         &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &     2.0  \\ 
+                 &  SRPscan          &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &  $<$0.1  \\ \hline 
+5S rRNA          &  Infernal         &    8 &   0 &    7 &   2 &    4 &   3 &    5 &   0 &    2 &   0 &     9.5  \\ 
+                 &  RNAmmer          &    8 &   0 &    5 &   0 &    1 &   0 &    5 &   0 &    2 &   0 &     0.3  \\ \hline 
+SSU rRNA         &  Infernal         &    7 &   0 &    4 &   0 &    1 &   0 &    5 &   0 &    2 &   0 &    12.9  \\ 
+                 &  RNAmmer          &    7 &   0 &    4 &   0 &    1 &   0 &    5 &   0 &    2 &   0 &     0.4  \\ \hline 
+LSU rRNA         &  Infernal         &      &     &      &     &      &     &      &     &      &     &          \\ 
+                 &  RNAmmer          &    7 &   7 &    4 &   4 &    1 &   1 &    5 &   5 &    2 &   2 &     0.5  \\ \hline 
+\end{tabular}
+\end{center}
+
+\label{tbl:compare-bac}
+\end{table}
+
+
+\begin{table}
+\caption{Comparison of predictions by Infernal and family-specific
+  methods for various RNAs in four eukaryotic genomes. Abbreviated
+  genome names are fully listed in Table~\ref{tbl:genomes}.  RNAmmer
+  does not do 5.8S rRNA searches, so the corresponding cells are left
+  blank in the table. Column headings and program versions, options
+  and cutoffs are the same as described in caption of
+  Table~\ref{tbl:compare-arc}, except that for Infernal searches only 
+  hits with bit scores above the Rfam GA cutoff \emph{and} E-values
+  below $1e-5$ were considered. Search times were measured as single
+  execution threads on 2.66 GHz Intel Xeon Gainestown (X5550)
+  processors, with the exception of Infernal \emph{M. mus.} searches which were
+  run in parallel using MPI on 200 such processors. For the MPI runs,
+  the total (summed) time required by all 200 processors is reported.
+}
+\begin{center}
+\begin{tabular}{|l|l|rr|rr|rr|rr|r|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{} &  \multicolumn{8}{c}{organism (eukarya)}   & \multicolumn{1}{c}{} \\ \cline{3-10}
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &  \multicolumn{2}{c|}{\emph{C. dub.}}  &  \multicolumn{2}{c|}{\emph{L. bra.}}  &  \multicolumn{2}{c|}{\emph{A. tha.}}  &  \multicolumn{2}{c|}{\emph{M. mus.}}   & \multicolumn{1}{c}{avg} \\ 
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &  \multicolumn{2}{c|}{(14.6 Mb)}  &  \multicolumn{2}{c|}{(31.4 Mb)}  &  \multicolumn{2}{c|}{(119.7 Mb)}  &  \multicolumn{2}{c|}{(2654.9 Mb)}   & \multicolumn{1}{c}{time} \\ 
+\multicolumn{1}{c}{family}  &  \multicolumn{1}{c|}{software}  &  hits & unq &  hits & unq &  hits & unq &  hits & unq  & \multicolumn{1}{c}{(min)} \\ \hline 
+tRNA             &  Infernal         &  114 &   0 &   82 &   0 &  679 &   5 &  442 &  10 &  4887.6  \\ 
+                 &  tRNAscan-SE      &  130 &  16 &   82 &   0 &  699 &  25 &  26201$^a$ & 25769 &     1.3  \\ \hline 
+tRNA             &  Infernal         &  114 &  26 &   82 &   1 &  679 &  47 &  442 &  12 &  4887.6  \\ 
+                 &  Aragorn          &   89 &   1 &   85 &   4 &  666 &  34 &  1656 & 1226 &     2.2  \\ \hline 
+RNase P RNA      &  Infernal         &    1 &   1 &    0 &   0 &    0 &   0 &   16 &  10 &  2113.6  \\ 
+                 &  Bcheck           &    0 &   0 &    0 &   0 &    0 &   0 &    6 &   0 &     0.2  \\ \hline 
+5S rRNA          &  Infernal         &    2 &   0 &    9 &   1 &  497 &   3 &  116 & 116 &  1093.4  \\ 
+                 &  RNAmmer          &    2 &   0 &    8 &   0 &  498 &   4 &    0 &   0 &     1.1  \\ \hline 
+SSU rRNA         &  Infernal         &    1 &   0 &    1 &   1 &    8 &   3 &    8 &   6 &  1390.5  \\ 
+                 &  RNAmmer          &    1 &   0 &    0 &   0 &    5 &   0 &    2 &   0 &     3.5  \\ \hline 
+LSU rRNA         &  Infernal         &      &     &      &     &      &     &      &     &          \\ 
+                 &  RNAmmer          &    1 &   1 &    0 &   0 &    4 &   4 &    3 &   3 &     4.4  \\ \hline 
+5.8S rRNA        &  Infernal         &    1 &   1 &    0 &   0 &    2 &   2 &    2 &   2 &   339.0  \\ 
+                 &  RNAmmer          &      &     &      &     &      &     &      &     &          \\ \hline 
+\end{tabular}
+\end{center}
+
+$^a$ 22918 of these are annotated as pseudogenes by tRNAscan-SE.
+
+\label{tbl:compare-euk}
+\end{table}

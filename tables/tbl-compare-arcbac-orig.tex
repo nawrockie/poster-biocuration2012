@@ -1,0 +1,67 @@
+\begin{footnotesize}
+
+\begin{table}
+\label{tbl:compare}
+\begin{center}
+\begin{tabular}{|l|l|rr|rr|rr|rr|rr|r|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{} &  \multicolumn{10}{c}{organism (archaea)}   & \multicolumn{1}{c}{avg} \\ \cline{3-12}
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &  \multicolumn{2}{c|}{\emph{M. rum.}}  &  \multicolumn{2}{c|}{\emph{H. vol.}}  &  \multicolumn{2}{c|}{\emph{H. jeo.}}  &  \multicolumn{2}{c|}{\emph{A. sac.}}  &  \multicolumn{2}{c|}{\emph{M. mar.}}   & \multicolumn{1}{c}{time} \\ 
+\multicolumn{1}{c}{family}  &  \multicolumn{1}{c|}{software}  &  hits & unq &  hits & unq &  hits & unq &  hits & unq &  hits & unq  & \multicolumn{1}{c}{(secs)} \\ \hline 
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+tRNA             &  Infernal         &   60 &   2 &   51 &   2 &   48 &   0 &   45 &   1 &   39 &   0 & 1038.0  \\ 
+                 &  tRNAscan-SE      &   58 &   0 &   51 &   2 &   49 &   1 &   45 &   1 &   40 &   1 &  27.6  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+tRNA             &  Infernal         &   60 &   4 &   51 &   2 &   48 &   4 &   45 &   6 &   39 &   2 & 1038.0  \\ 
+                 &  Aragorn          &   56 &   0 &   54 &   5 &   48 &   4 &   39 &   0 &   38 &   1 &   0.9  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+RNase P RNA      &  Infernal         &    1 &   1 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 & 205.2  \\ 
+                 &  Bcheck           &    0 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &  13.7  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+SRP RNA          &  Infernal         &    1 &   1 &    1 &   0 &    0 &   0 &    0 &   0 &    1 &   0 & 131.0  \\ 
+                 &  SRPscan          &    0 &   0 &    1 &   0 &    1 &   1 &    1 &   1 &    1 &   0 &   0.0  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+5S rRNA          &  Infernal         &    3 &   3 &    2 &   0 &    1 &   0 &    2 &   2 &    3 &   3 & 239.2  \\ 
+                 &  RNAmmer          &    0 &   0 &    2 &   0 &    1 &   0 &    0 &   0 &    0 &   0 &  16.6  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+SSU rRNA         &  Infernal         &    2 &   0 &    2 &   0 &    1 &   0 &    1 &   0 &    2 &   0 & 402.4  \\ 
+                 &  RNAmmer          &    2 &   0 &    2 &   0 &    1 &   0 &    1 &   0 &    2 &   0 &  17.1  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+LSU rRNA         &  Infernal         &      &     &      &     &      &     &      &     &      &     &        \\ 
+                 &  RNAmmer          &    2 &   2 &    2 &   2 &    1 &   1 &    1 &   1 &    2 &   2 &  19.6  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\ \hline 
+\multicolumn{12}{c}{} \\ 
+\end{tabular}
+\begin{tabular}{|l|l|rr|rr|rr|rr|rr|r|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{} &  \multicolumn{10}{c}{organism (bacteria)}   & \multicolumn{1}{c}{avg} \\ \cline{3-12}
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &  \multicolumn{2}{c|}{\emph{C. rod.}}  &  \multicolumn{2}{c|}{\emph{B. den.}}  &  \multicolumn{2}{c|}{\emph{P. sta.}}  &  \multicolumn{2}{c|}{\emph{L. mon.}}  &  \multicolumn{2}{c|}{\emph{C. ucy.}}   & \multicolumn{1}{c}{time} \\ 
+\multicolumn{1}{c}{family}  &  \multicolumn{1}{c|}{software}  &  hits & unq &  hits & unq &  hits & unq &  hits & unq &  hits & unq  & \multicolumn{1}{c}{(secs)} \\ \hline 
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+tRNA             &  Infernal         &   85 &   1 &   57 &   1 &   48 &   2 &   58 &   0 &   37 &   0 & 1411.0  \\ 
+                 &  tRNAscan-SE      &   84 &   0 &   56 &   0 &   46 &   0 &   58 &   0 &   37 &   0 &  34.5  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+tRNA             &  Infernal         &   85 &   1 &   57 &   1 &   48 &   1 &   58 &   0 &   37 &   0 & 1411.0  \\ 
+                 &  Aragorn          &   87 &   3 &   56 &   0 &   49 &   2 &   59 &   1 &   37 &   0 &   1.1  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+tmRNA            &  Infernal         &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 & 441.6  \\ 
+                 &  Aragorn          &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &   2.3  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+RNase P RNA      &  Infernal         &    1 &   0 &    1 &   0 &    1 &   0 &    2 &   0 &    1 &   0 & 244.6  \\ 
+                 &  Bcheck           &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &  12.8  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+SRP RNA          &  Infernal         &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 & 123.0  \\ 
+                 &  SRPscan          &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &    1 &   0 &   0.0  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+5S rRNA          &  Infernal         &    8 &   0 &    7 &   2 &    4 &   3 &    5 &   0 &    2 &   0 & 567.2  \\ 
+                 &  RNAmmer          &    8 &   0 &    5 &   0 &    1 &   0 &    5 &   0 &    2 &   0 &  20.5  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+SSU rRNA         &  Infernal         &    7 &   0 &    4 &   0 &    1 &   0 &    5 &   0 &    2 &   0 & 774.8  \\ 
+                 &  RNAmmer          &    7 &   0 &    4 &   0 &    1 &   0 &    5 &   0 &    2 &   0 &  21.1  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\
+LSU rRNA         &  Infernal         &      &     &      &     &      &     &      &     &      &     &        \\ 
+                 &  RNAmmer          &    7 &   7 &    4 &   4 &    1 &   1 &    5 &   5 &    2 &   2 &  28.8  \\ \hline
+%                 &                   &      &     &      &     &      &     &      &     &      &      & \\ \hline 
+\end{tabular}
+\end{center}
+\end{table}
+
+\end{footnotesize}

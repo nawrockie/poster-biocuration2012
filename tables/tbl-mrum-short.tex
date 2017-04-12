@@ -1,0 +1,51 @@
+% mrum
+\begin{small}
+\begin{table}
+\label{tbl:results}
+\begin{center}
+\begin{tabular}{|l|l|r|r|r|rr|r|} \hline
+                                &                      & Rfam    & \# in   & \multicolumn{3}{c|}{} & running \\ \cline{5-7}
+Rfam                            & Rfam                 & GA bit  & Gen-    & {\# putative} & \multicolumn{2}{c|}{best hit $>$ GA} & time \\ \cline{5-7}
+family ID                       & type                 & thresh  & Bank    & homologs      & bit & E-value & (seconds) \\ \hline
+tRNA                            &  Gene; tRNA;           &  24.0  &    58  &     60 &   70.0  &  7.2e-16 &   7.2 \\
+5S\_rRNA                        &  Gene; rRNA;           &  16.0  &     4  &      3 &   63.0  &  1.2e-12 &   2.2 \\
+SSU\_rRNA\_5                    &  Gene; rRNA;           &  25.0  &     2  &      2 &  331.3  & 2.8e-100 &  15.9 \\
+LSU\_rRNA\_5                    &                        &        &     2  &        &         &          &       \\
+SRP\_euk\_arch                  &  Gene;                 &  49.0  &     0  &      1 &  106.9  &  2.8e-31 &   1.7 \\
+RNaseP\_arch                    &  Gene; ribozyme;       &  53.0  &     0  &      1 &  200.0  &  3.2e-65 &  90.5 \\
+FMN                             &  Cis-reg; riboswitch;  &  40.0  &     0  &      1 &  114.0  &  1.1e-28 &   6.9 \\
+CRISPR-DR2                      &  Gene; CRISPR;         &  22.0  &     0  &     60 &   28.9  &   0.0028 &   5.0 \\
+CRISPR-DR42                     &  Gene; CRISPR;         &  19.2  &     0  &      1 &   27.4  &   0.0063 &  14.4 \\
+sR1                             &  Gene; snRNA;          &  21.0  &     0  &      1 &   33.3  &  1.8e-06 &   7.7 \\
+                                &  snoRNA; CD-box;       &        &        &        &         &          &       \\
+sR2                             &  Gene; snRNA;          &  20.0  &     0  &      1 &   37.0  &  4.9e-06 &  22.9 \\
+                                &  snoRNA; CD-box;       &        &        &        &         &          &       \\
+sR48                            &  Gene; snRNA;          &  20.0  &     0  &      1 &   22.7  &   0.0097 &  11.9 \\
+                                &  snoRNA; CD-box;       &        &        &        &         &          &       \\
+all                             &                        &        &    66  &    132 &         &          &       \\ \hline
+\end{tabular}
+\caption{Infernal predicted RNAs in the archaeon
+  \emph{Methanobrevibacter ruminantium} (GenBank accession
+  CP001719.1). All Rfam 10.0 families \cite{Gardner11} for which
+  Infernal finds at least one unique hit with a bit score above the
+  Rfam bit-score gathering threshold (GA) and an E-value below $0.01$ are
+  shown. Also shown is LSU rRNA, which is not in Rfam, because LSU
+  rRNA are annotated in GenBank. 
+  Non-obvious column heading descriptions:
+%  "\# in GenBank'': number of RNAs in GenBank
+%  annotation; 
+  ``believed'': hits believed to be real homologs, these are all
+  nonoverlapping hits with E-values below $0.01$; ``unique'': number
+  of nonoverlapping Infernal hits above GA cutoff, overlaps of more
+  than 50\% the length of the shorter sequence were removed by keeping
+  the highest bit score amongst the overlapping hits; ``total'': total
+  Infernal hits above GA cutoff, including overlaps; ``best hit'': bit
+  scores and E-values of the best scoring hits for each family.}
+%The following
+%  sets of families shared overlapping hits, the family with the
+%  highest bit score for all overlaps is listed first: SRP\_euk\_arch
+%  and SRP\_bact (1 hit), CRISPR-DR2 and CRISPR-DR39 (60 hits), and
+%  sR1, sR2, sR8 and snoPyro\_CD (1 hit).}
+\end{center}
+\end{table}
+\end{small}

@@ -1,0 +1,44 @@
+\begin{small}
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|l|rrr|rrr|rrr|} \cline{3-11}
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &  \multicolumn{3}{c|}{six prokaryotic}  &  \multicolumn{3}{c|}{\emph{Arabidopsis}}&  \multicolumn{3}{c|}{\emph{Mus}} \\
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &  \multicolumn{3}{c|}{genomes}        &  \multicolumn{3}{c|}{\emph{thaliana}}   &  \multicolumn{3}{c|}{\emph{musculus}}   \\ 
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &  \multicolumn{3}{c|}{(19.2 Mb)}  &  \multicolumn{3}{c|}{(119.7 Mb)}  &  \multicolumn{3}{c|}{(2654.9 Mb)}   \\ \cline{3-11}
+\multicolumn{1}{c}{}  &  \multicolumn{1}{c|}{}  &      &     &    time &       &      &    time &      &     &    time  \\ 
+\multicolumn{1}{l}{family} &  \multicolumn{1}{l|}{software}  &  hits & unq &   (min) &  hits & unq &   (min) &  hits & unq &   (min)  \\ \hline 
+tRNA                       &  Infernal                   &  350 &   3 &    0.36 &  681 &   5 &    4.01 &  447 &  12 &  115.09  \\ 
+                           &  tRNAscan-SE                &  350 &   3 &    2.76 &  699 &  23 &    3.84 &  26201 & 25766 &  226.92  \\ \hline 
+tRNA                       &  Infernal                   &  350 &  16 &    0.36 &  681 &  46 &    4.01 &  447 &  14 &  115.09  \\ 
+                           &  Aragorn                    &  345 &  11 &    0.10 &  666 &  31 &    0.39 &  1656 & 1223 &    8.11  \\ \hline 
+RNase P RNA                &  Infernal                   &    6 &   1 &    5.65 &    0 &   0 &   34.94 &   17 &  11 & 2310.64  \\ 
+                           &  Bcheck                     &    5 &   0 &    1.18 &    0 &   0 &    0.65 &    6 &   6 &   13.60  \\ \hline 
+5S rRNA                    &  Infernal                   &   23 &   4 &    0.62 &  497 &   3 &    2.58 &  115 & 115 &   71.13  \\ 
+                           &  RNAmmer                    &   19 &   0 &    1.79 &  498 &   4 &   12.81 &    0 &   0 &  232.27  \\ \hline 
+SSU rRNA                   &  Infernal                   &   20 &   0 &    6.32 &    8 &   3 &   16.65 &   10 &   8 &  943.37  \\ 
+                           &  RNAmmer                    &   20 &   0 &    1.85 &    5 &   0 &    9.99 &    2 &   0 &  215.89  \\ \hline 
+SRP RNA                    &  Infernal                   &    6 &   1 &    0.75 & \multicolumn{6}{c}{} \\
+                           &  SRPscan                    &    5 &   0 &$^*$1.20 & \multicolumn{6}{c}{} \\ \cline{1-5}
+\multicolumn{8}{c}{} \\ 
+\end{tabular}
+\caption{Comparison of predictions by Infernal and family-specific
+  methods for various RNAs. Column three to five contain data for searches
+  against all six prokaryotic genomes from Table~\ref{tbl:genomes}.  Column
+  labeled ``hits'' include total number of predictions, and those
+  labeled ``unq'' include unique hits that are not found with the
+  method on the adjacent line. Average timings are reported in minutes
+  (``(min)'').  Infernal searches for SSU rRNA were done with a
+  truncated model of about 500 positions, while RNAmmer searches used
+  a full length model (about 1500 positions). Infernal was run with
+  the {\tt -E 1E-5} option and all other programs were run in default
+  mode, except when options were necessary to restrict searches to the
+  specific family and/or domain being tested. $^*$: SRPscan is not
+  downloadable and so times were measured manually via stopwatch on
+  their website and include time required for sequence data
+  upload. All other times were measured as single execution threads on
+  2.66 GHz Intel Xeon Gainestown (X5550) processors.  }
+\label{tbl:compare}
+\end{center}
+
+\end{table}
+\end{small}

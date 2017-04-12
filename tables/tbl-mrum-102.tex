@@ -1,0 +1,82 @@
+\begin{footnotesize}
+\begin{table}
+\label{tbl:results}
+\begin{center}  
+%\begin{tabular}{|p{1.8cm}|p{2.5cm}|p{1.2cm}|r||r|rr||r|r||r|r||} \hline
+\begin{tabular}{|l|l|r|r||r|r|r||r|r||r|r||} \hline
+                                &                        & Rfam   & \# in  & \multicolumn{5}{c||}{Infernal hits above Rfam GA thr} \\ \cline{5-9}
+Rfam                            & Rfam                   & GA bit & Gen-   & \multicolumn{3}{c||}{\# hits}  &  \multicolumn{2}{c||}{best hit} \\ \cline{5-9}
+family ID                       & type                   & thresh & bank   & believed & unique   & total  & bit     & E-value  \\ \hline
+tRNA                            &  Gene; tRNA;           &  24.0  &     58 &      60  &      60  &     60 &   69.8  &  8.2e-16 \\ 
+%                               &                        &        &        &          &          &        &         &          \\ 
+5S\_rRNA                        &  Gene; rRNA;           &  16.0  &      4 &       3  &       3  &      3 &   58.9  &  1.4e-11 \\
+%                               &                        &        &        &          &          &        &         &          \\
+SSU\_rRNA\_5                    &  Gene; rRNA;           &  25.0  &      2 &       2  &       2  &      2 &  330.0  & 7.1e-100 \\
+%                               &                        &        &        &          &          &        &         &          \\
+LSU rRNA                        &                        &        &      2 &          &          &        &         &          \\
+%                               &                        &        &        &          &          &        &         &          \\
+SRP\_euk\_arch                  &  Gene;                 &  49.0  &     0  &       1  &       1  &      1 &  102.2  &  8.6e-30 \\
+%                               &                        &        &        &          &          &        &         &          \\
+SRP\_bact                       &  Gene;                 &  28.0  &     0  &       0  &       0  &      1 &   28.3  &  1.5e-4  \\
+%                               &                        &        &        &          &          &        &         &          \\
+RNaseP\_arch                    &  Gene; ribozyme;       &  53.0  &     0  &       1  &       1  &      1 &  193.9  & 3.6e-63  \\
+%                               &                        &        &        &          &          &        &         &          \\
+FMN                             &  Cis-reg; riboswitch;  &  40.0  &     0  &       1  &       1  &      1 &  110.8  & 8.8e-28  \\
+%                               &                        &        &        &          &          &        &         &          \\
+CRISPR-DR2                      &  Gene; CRISPR;         &  22.0  &     0  &      60  &      61  &     61 &   28.2  &  0.0043  \\
+%                               &                        &        &        &          &          &        &         &          \\
+CRISPR-DR39                     &  Gene; CRISPR;         &  20.0  &     0  &       0  &       2  &     62 &   26.5  &   0.020  \\
+%                               &                        &        &        &          &          &        &         &          \\
+CRISPR-DR42                     &  Gene; CRISPR;         &  19.2  &     0  &       0  &       1  &      1 &   21.5  &    0.16  \\
+%                               &                        &        &        &          &          &        &         &          \\
+sR1                             &  Gene; snRNA;          &  21.0  &     0  &       1  &       1  &      1 &   33.1  & 2.0e-06  \\
+                                &  snoRNA; CD-box;       &        &        &          &          &        &         &          \\
+%                               &                        &        &        &          &          &        &         &          \\
+sR2                             &  Gene; snRNA;          &  20.0  &     0  &       0  &       0  &      1 &   36.8  & 5.5e-06  \\
+                                &  snoRNA; CD-box;       &        &        &          &          &        &         &          \\
+%                               &                        &        &        &          &          &        &         &          \\
+sR8                             &  Gene; snRNA;          &  25.0  &     0  &       0  &       0  &      1 &   29.9  & 2.7e-05  \\
+                                &  snoRNA; CD-box;       &        &        &          &          &        &         &          \\
+%                               &                        &        &        &          &          &        &         &          \\
+snoPyro\_CD                     &  Gene; snRNA;          &  20.0  &    0   &       0  &       0  &      1 &   27.1  &  0.0018  \\
+                                &  snoRNA; CD-box;       &        &        &          &          &        &         &          \\
+%                               &                        &        &        &          &          &        &         &          \\
+sR11                            &  Gene; snRNA;          &  16.0  &     0  &       0  &       1  &      1 &   16.1  &     0.79 \\
+                                &  snoRNA; CD-box;       &        &        &          &          &        &         &          \\
+%                               &                        &        &        &          &          &        &         &          \\
+sR15                            &  Gene; snRNA;          &  20.0  &     0  &       0  &       1  &      1 &   24.5  &   0.027  \\
+                                &  snoRNA; CD-box;       &        &        &          &          &        &         &          \\
+%                               &                        &        &        &          &          &        &         &          \\
+sR21                            &  Gene; snRNA;          &  20.0  &    0   &       0  &       1  &      1 &   20.6  &    0.14  \\
+                                &  snoRNA; CD-box;       &        &        &          &          &        &         &          \\
+%                               &                        &        &        &          &          &        &         &          \\
+sR48                            &  Gene; snRNA;          &  20.0  &     0  &       0  &       1  &      1 &   22.2  &    0.013 \\
+                                &  snoRNA; CD-box;       &        &        &          &          &        &         &          \\
+%                               &                        &        &        &          &          &        &         &          \\ \hline
+total                           &                        &        &     66 &     129  &      137 &     201&         &          \\ \hline
+\noalign{\smallskip}\hline\noalign{\smallskip}
+\end{tabular}
+\caption{Infernal predicted RNAs in the archaeon
+  \emph{Methanobrevibacter ruminantium} (GenBank accession
+  CP001719.1). All Rfam 10.0 families \cite{Gardner11} for which
+  Infernal finds at least one hit above the Rfam bit-score gathering
+  threshold (GA) are shown. Also shown is LSU rRNA, which is not in
+  Rfam as discussed in the text. Non-obvious column heading
+  descriptions: "\# in GenBank'': number of RNAs in GenBank
+  annotation; ``believed'': hits believed to be real homologs, these
+  are all nonoverlapping hits with E-values below $0.01$ (the choice
+  of $0.01$ here is discussed in section~\ref{subsec:considerations});
+  ``unique'': number of nonoverlapping Infernal hits, overlaps of more
+  than 50\% the length of the shorter sequence were removed by keeping
+  the highest bit score amongst the overlapping hits; ``total'': total
+  Infernal hits, including overlaps; ``best hit'' and ``worst hit'':
+  bit scores and E-values of the best and worst scoring hits out of
+  total hits for each family. For families with exactly 1 hit,``worst
+  hit'' columns are left blank. The following sets of families shared
+  overlapping hits, the family with the highest bit score for all
+  overlaps is listed first: SRP\_euk\_arch and SRP\_bact (1 hit),
+  CRISPR-DR2 and CRISPR-DR39 (60 hits), and sR1, sR2, sR8 and
+  snoPyro\_CD (1 hit).}
+\end{center}
+\end{table}
+\end{footnotesize}

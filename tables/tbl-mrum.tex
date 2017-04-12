@@ -1,0 +1,43 @@
+% mrum
+\begin{small}
+\begin{table}
+\label{tbl:results}
+\begin{center}
+\begin{tabular}{|l|l|r|r|rr|r|} \hline
+                                &                      &         & \multicolumn{4}{c|}{Infernal results} \\ \cline {4-7}
+RNA                             &                      & \# in   & \#       & \multicolumn{2}{c|}{best hit} & time \\ \cline{5-6}     
+family ID                       & RNA type             & GenBank & hits     & bit sc & E-value  &      (secs) \\ \hline
+tRNA                            &  Gene; tRNA;         &    58  &       59  &   69.8 &  7.5e-16 &      4.9 \\
+5S\_rRNA                        &  Gene; rRNA;         &     4  &        3  &   58.9 &  1.4e-11 &      1.5 \\
+SSU\_rRNA\_archaea              &  Gene; rRNA;         &     2  &        2  &  1483.0&        0 &      9.7 \\
+LSU\_rRNA                       &  Gene; rRNA;         &     2  &           &        &          &          \\
+5\_8S\_rRNA                     &  Gene; rRNA;         &     0  &        2  &   32.6 &    1e-06 &      7.4 \\
+Archaea\_SRP                    &  Gene;               &     0  &        1  &  183.7 &  6.2e-52 &      0.9 \\
+RNaseP\_arch                    &  Gene; ribozyme;     &     0  &        1  &  193.9 &  3.5e-63 &     75.8 \\
+FMN                             &  Cis-reg; riboswitch;&     0  &        1  &  110.8 &  8.6e-28 &      2.8 \\
+CRISPR-DR2                      &  Gene; CRISPR;       &     0  &       60  &   28.2 &   0.0043 &      1.6 \\
+CRISPR-DR7                      &  Gene; CRISPR;       &     0  &       43  &   26.0 &   0.0016 &      2.6 \\
+sR1                             &  Gene; snRNA;        &     0  &        1  &   33.1 &  2.1e-06 &      3.0 \\
+                                &  snoRNA; CD-box;     &        &           &        &          &          \\
+sR3                             &  Gene; snRNA;        &     0  &        1  &   21.6 &   0.0088 &      3.3 \\
+                                &  snoRNA; CD-box;     &        &           &        &          &          \\
+snoR9                           &  Gene; snRNA;        &     0  &        1  &   20.7 &   0.0062 &      5.2 \\
+                                &  snoRNA; CD-box;     &        &           &        &          &          \\
+all 102 families                &                      &    66  &      175  &        &          &     550.5\\ \hline
+\multicolumn{7}{c}{} \\
+
+\end{tabular}
+\caption{Infernal predicted RNAs in the archaeon
+  \emph{Methanobrevibacter ruminantium} (GenBank accession
+  CP001719.1). All Rfam 10.1 families \cite{Gardner11} for which
+  Infernal finds at least one unique hit with an E-value below
+  $0.0098$ ($1/102$) 
+  are shown. Also shown is LSU rRNA, which is not in Rfam, because LSU
+  rRNA are annotated in GenBank. 
+  Overlapping hits of more
+  than 50\% the length of the shorter hit were removed by keeping
+  the hit with the lowest E-value amongst the overlapping hits.}
+\end{center}
+\end{table}
+\end{small}
+
